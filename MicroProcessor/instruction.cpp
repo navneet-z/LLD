@@ -1,10 +1,7 @@
-#include <iostream>
-
-using namespace std;
-
+#pragma once
 class Instruction {
     public:
-        void executeInstruction() {
+        virtual void executeInstruction() {
             
         }
 };

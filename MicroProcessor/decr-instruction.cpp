@@ -4,18 +4,16 @@
 
 using namespace std;
 
-class AddInstruction : public Instruction {
+class DecrInstruction : public Instruction {
     private:
         Registr* reg;
-        int val;
 
     public:
-        AddInstruction(Registr* reg, int val) {
+        DecrInstruction(Registr* reg) {
             this->reg = reg;
-            this->val = val;
         }
 
         void executeInstruction() {
-            this->reg->setValue(this->reg->getValue() + this->val);
+            this->reg->setValue(this->reg->getValue() - 1);
         }
 };

@@ -1,8 +1,5 @@
-#include <iostream>
-
-using namespace std;
-
-class Register {
+#pragma once
+class Registr {
     private:
         int value;
 
